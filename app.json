@@ -24,7 +24,13 @@
       "**/*"
     ],
     "ios": {
+      "bundleIdentifier": "com.jefersonmota.chamadatdr",
+      "buildNumber": "1.0.0",
       "supportsTablet": true
+    },
+    "android": {
+      "package": "com.jefersonmota.chamadatdr",
+      "versionCode": 1
     },
     "androidStatusBar": {
       "barStyle": "light-content",

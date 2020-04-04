@@ -45,11 +45,16 @@ export default class Datass extends React.Component {
         let { datas } = this.state;
         let { nomeMateria } = this.state;
         return datas.map((data, key) => {
-            let dia = data.toDate().toLocaleDateString();
+            let dia = data.toDate().getDate();
+            let mes = data.toDate().getMonth() + 1;
+            let ano = data.toDate().getFullYear();
+
+            if(mes < 10) mes = '0' + mes;
+            let dataExibida = dia + '/' + mes + '/' + ano;
             return(
                 <View key={key} style={styles.rowChamada}>
                     <View style={styles.data}>
-                    <Text>{dia}</Text>
+                    <Text>{dataExibida}</Text>
                     </View>
 
                     <View style={styles.acao}>

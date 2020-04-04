@@ -32,12 +32,19 @@ export default class Frequencia extends React.Component {
 
     mostrarLista(){
         let { dataChamada } = this.state;
-        let dia = dataChamada.toDate().toLocaleDateString(); 
+
+        let dia = dataChamada.toDate().getDate();
+        let mes = dataChamada.toDate().getMonth() + 1;
+        let ano = dataChamada.toDate().getFullYear();
+
+        if(mes < 10) mes = '0' + mes;
+        let dataExibida = dia + '/' + mes + '/' + ano;
+
         return(
             <View style={styles.lista}>
 
               <View style={styles.headerChamada}>
-                <Text style={styles.headerChamadaData}>Chamada: {dia}</Text>
+                <Text style={styles.headerChamadaData}>Chamada: {dataExibida}</Text>
               </View>
               
               <View style={styles.headerChamada}>

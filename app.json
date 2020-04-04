@@ -11,7 +11,7 @@
     ],
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/ic_launcher.png",
+    "icon": "./assets/icon_launcher.jpg",
     "splash": {
       "image": "./assets/splash_launcher.png",
       "resizeMode": "cover",

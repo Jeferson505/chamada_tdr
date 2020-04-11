@@ -19,8 +19,8 @@ Para executar o aplicativo na plataforma Android e iOS é necessário ter instal
 
 Ou através dos QR Codes:
 
-![Image](https://drive.google.com/uc?export=view&id=1uUECT9eF8LIO5e5yciurRrLHQPisfQlc)
-![Image](https://drive.google.com/uc?export=view&id=163lrF9qkWAhOjfveN0qJ8c3SSIrbGsaI)
+![Image](./images/qrCodePlayStoreExpo.png)
+![Image](./images/qrCodePlayStoreExpo.png)
 
 Após a instalação do **Node.js**, o **Expo** pode ser instalado pelo seguinte comando:
 	
